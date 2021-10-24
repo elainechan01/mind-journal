@@ -5,8 +5,16 @@ steps:
   - "-c"
   - |-
           cd ./client
-          ls .
-          npm i
-          npm run build
+- name: node:v16.0.0
+  entrypoint: npm
+  args: ['install']
+- name: node:v16.0.0
+  entrypoint: npm
+  args: ['run', 'build']
+- name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: "bash"
+  args:
+  - "-c"
+  - |-
           gcloud app deploy
 timeout: "1600s"

@@ -6,6 +6,7 @@ steps:
 #   - |-
 #           cd ./mind-journal/client
 - name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: "bash"
   args: 
   - "-c"
   - |-

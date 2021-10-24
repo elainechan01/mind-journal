@@ -5,6 +5,11 @@ steps:
 #   - "-c"
 #   - |-
 #           cd ./mind-journal/client
+- name: "bash"
+  args: 
+  - "-c"
+  - |-
+    cd ~/mind-journal/client
 - name: "gcr.io/cloud-builders/npm"
   args: ['install']
 - name: "gcr.io/cloud-builders/npm"

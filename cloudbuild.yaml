@@ -10,5 +10,5 @@ steps:
   args: 
   - "-c"
   - |-
-    gcloud app deploy ~/mind-journal/client/app.yaml
+    gcloud app deploy /client/app.yaml
 timeout: "1600s"

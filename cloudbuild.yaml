@@ -5,6 +5,7 @@ steps:
   - "-c"
   - |-
           cd ./client
+          ls .
           npm i
           npm run build
           gcloud app deploy

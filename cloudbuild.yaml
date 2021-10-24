@@ -5,13 +5,9 @@ steps:
 #   - "-c"
 #   - |-
 #           cd ./mind-journal/client
-- name: "gcr.io/cloud-builders/npm"
-  args: ['install']
-- name: "gcr.io/cloud-builders/npm"
-  args: ['test']
 - name: "gcr.io/cloud-builders/gcloud"
   args: 
   - "-c"
   - |-
-    gcloud app deploy ~/client/app.yaml
+    gcloud app deploy ~/mind-journal/client/app.yaml
 timeout: "1600s"

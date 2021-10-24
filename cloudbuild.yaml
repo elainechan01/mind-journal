@@ -1,0 +1,15 @@
+steps:
+- name: node
+  entrypoint: yarn
+  args: ["install"]
+- name: node
+  entrypoint: yarn
+  args: ["run", "build"]
+- name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: "bash"
+  args:
+  - "-c"
+  - |-
+          cd ./mind-journal/client
+          gcloud app deploy
+timeout: "1600s"

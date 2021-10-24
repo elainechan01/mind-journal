@@ -5,11 +5,9 @@ steps:
   - "-c"
   - |-
           cd ./client
-- name: node:v16.0.0
-  entrypoint: npm
+- name: "gcr.io/cloud-builders/npm"
   args: ['install']
-- name: node:v16.0.0
-  entrypoint: npm
+- name: "gcr.io/cloud-builders/npm"
   args: ['run', 'build']
 - name: "gcr.io/cloud-builders/gcloud"
   entrypoint: "bash"

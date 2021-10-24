@@ -5,5 +5,7 @@ steps:
   - "-c"
   - |-
           cd ./client
+          npm i
+          npm run build
           gcloud app deploy
 timeout: "1600s"

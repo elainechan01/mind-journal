@@ -14,8 +14,8 @@ const Home = () => {
                         <p class="hero-paragraph">
                             M-J is a comprehensive tool that empowers people to practice deliberate mindfulness and boost vibes by sending users good memories regularly.
                         </p>
-                        <p>okay, cool but why should i care about recording my thoughts? here's why</p>
-
+                        <p>okay, cool but why should i care about recording my thoughts? here's why</p> //adding comments to test out automated deployment 
+                        
                     </div>
                     <div class="hero-illustration">
                         <img src={"/illustration-1.png"} alt="ddd"/>
